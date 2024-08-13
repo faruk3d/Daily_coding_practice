@@ -10,4 +10,8 @@ for item in question_data:
     question_list.append(question)
 
 quiz = QuizBrain(question_list)
-quiz.next_question()
+while quiz.still_has_questions():
+    quiz.next_question()
+    
+print("You've completed the quiz")
+print(f"Your final score is: {quiz.player_score}/{quiz.question_number}")
