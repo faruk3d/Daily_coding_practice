@@ -1,5 +1,5 @@
 from turtle import Turtle, Screen
-import random as r
+import random
 
 tim = Turtle()
 # Draw a square
