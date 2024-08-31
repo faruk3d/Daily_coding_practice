@@ -11,7 +11,6 @@ screen.title(titlestring = "Metal Gear Solide Snake")
 # Create a snake body
 snake = Snake()
 
-
 # Move the snake
 game_is_on = True
 while game_is_on:
