@@ -1,4 +1,4 @@
-from turtle import Screen, Turtle
+from turtle import Screen
 from snake import Snake
 from food import Food
 import time
@@ -11,6 +11,9 @@ screen.title(titlestring = "Metal Gear Solide Snake")
 
 # Create a snake body
 snake = Snake()
+food = Food()
+
+# Control the snake
 screen.listen()
 screen.onkey(snake.up, "Up")
 screen.onkey(snake.down, "Down")
@@ -22,12 +25,13 @@ game_is_on = True
 while game_is_on:
     screen.update()
     time.sleep(0.1)
-    
     snake.move()
-# Control the snake
+    # Detect collision with food
+    if snake.head.distance(food) < 15:
+        food.refresh()
 
 
-# Detect collision with food
+
 # Create a scoreboard
 # Detect collision with wall
 # Detect collision with tail
