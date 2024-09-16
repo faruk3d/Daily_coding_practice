@@ -34,7 +34,6 @@ while game_is_on:
 
 # Create a scoreboard
 
-# add
 # Detect collision with wall
 # Detect collision with tail
 
