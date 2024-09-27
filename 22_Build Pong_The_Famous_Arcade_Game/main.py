@@ -9,6 +9,7 @@ screen.setup(width =800, height = 600)
 #screen.tracer(0)
 screen.bgcolor("black")
 screen.title(titlestring = "P O N G")
+screen.tracer(0)
 
 paddle = Paddle()
 
@@ -24,5 +25,8 @@ screen.onkey(paddle.down, "Down")
 # Detect when paddle misses
 # Keep score
 
+game_is_on = True
+while game_is_on:
+    screen.update()
 
 screen.exitonclick()

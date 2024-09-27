@@ -19,9 +19,9 @@ class Paddle:
         self.paddle.goto(350, 0)
         
     def up(self):
-        new_y = self.paddle.ycor() + 20
+        new_y = self.paddle.ycor() + 40
         self.paddle.goto(self.paddle.xcor(), new_y)
         
     def down(self):
-        new_y = self.paddle.ycor() - 20
+        new_y = self.paddle.ycor() - 40
         self.paddle.goto(self.paddle.xcor(), new_y)
