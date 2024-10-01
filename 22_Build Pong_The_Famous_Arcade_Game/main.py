@@ -1,5 +1,6 @@
 from turtle import Screen
 from paddle import Paddle
+from ball import Ball
 
 RIGHT_P_POSITION = (350, 0)
 LEFT_P_POSITION = (-350, 0)
